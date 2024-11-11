@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Esempio di form
+    </title>
+    <meta charset="UTC-8">
+    <!--link rel="stylesheet" href="style.css"-->
+</head>
+<body>
+    <div>
+        <form action="" method="">
+            <h1>
+                Completa il form
+            </h1>
+            <label for="Nome">Inserisci nome: </label>
+            <input type="text" id="Nome" required>
+            <br>
+            <label for="Cognome">Inserisci cognome: </label>
+            <input type="text" id="Cognome" required>
+            <br>
+            <label for="Anni">Inserisci anni</label>
+            <input type="number" id="Anni" min="0" max="120"> <!-- funziona anche se quando digiti te lo laschia mettere fuori dal range ma quando confermi ti da errore -->
+            <br>
+            <label for="Sesso">Inserisci sesso</label>
+            <select id="Sesso" name="SelettoreSesso" required>
+                <option value="Maschio">Maschio</option>
+                <option value="Femmina">Femmina</option>
+                <option value="Altro">Altro</option>
+            </select>
+            <br>
+            <label for="Commento">Inserisci un commento</label>
+            <br>
+            <textarea id="Commento" name="TestoCommento" rows="4" cols="10" placeholder="metti qui il testo, su forza">Testo Iniziale</textarea>
+            <br>
+            <input type="radio" name="Valutazione" id="1s" value="1">
+            <label for="1s">1a stella</label>
+            <br>
+            <input type="radio" name="Valutazione" id="2s" value="2">
+            <label for="2s">2 stelle</label>
+            <br>
+            <input type="radio" name="Valutazione" id="3s" value="3">
+            <label for="3s">3 stelle</label>
+            <br>
+            <button type="submit">Invia</button>
+            <br>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
